@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hasil Rekomendasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-indigo-950 text-white min-h-screen font-sans">
+
+  <!-- Header -->
+  <header class="p-4 flex justify-between items-center border-b border-indigo-800 shadow">
+    <h1 class="text-2xl font-bold">Hasil Konsultasi</h1>
+    <a href="index.html" class="text-white hover:text-gray-300">
+      <i class="fas fa-arrow-left mr-2"></i> Kembali
+    </a>
+  </header>
+
+  <!-- Result Section -->
+  <section class="py-12 px-6 flex flex-col items-center">
+    <h2 class="text-3xl font-bold mb-4 text-center">Halo, Nama Pengguna 👋</h2>
+    <p class="text-gray-300 mb-8 text-center max-w-xl">Berdasarkan data yang kamu berikan, berikut adalah hasil analisis dan rekomendasi jurusan atau karier yang cocok untukmu.</p>
+
+    <!-- Klaster Info -->
+    <div class="bg-white text-indigo-950 rounded-2xl shadow-xl p-6 w-full max-w-xl mb-8">
+      <h3 class="text-xl font-semibold mb-2"><i class="fas fa-layer-group mr-2"></i>Kamu termasuk Klaster: <span class="font-bold text-indigo-700">Teknolog Inovatif</span></h3>
+      <p class="text-sm text-gray-700">Orang dalam klaster ini cenderung memiliki minat pada bidang teknologi, logika, dan berpikir sistematis.</p>
+    </div>
+
+    <!-- Rekomendasi -->
+    <div class="bg-white text-indigo-950 rounded-2xl shadow-xl p-6 w-full max-w-xl">
+      <h3 class="text-xl font-semibold mb-4"><i class="fas fa-graduation-cap mr-2"></i>Rekomendasi Jurusan / Karier</h3>
+      <ul class="space-y-3 list-disc list-inside">
+        <li>Teknik Informatika</li>
+        <li>Sistem Informasi</li>
+        <li>Data Science</li>
+        <li>Software Engineer</li>
+        <li>UI/UX Designer</li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-10 flex gap-4">
+      <a href="index.html" class="bg-white text-indigo-950 px-6 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+        <i class="fas fa-redo-alt mr-2"></i>Konsultasi Ulang
+      </a>
+      <button class="bg-green-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-green-600 transition">
+        <i class="fas fa-download mr-2"></i>Simpan Hasil
+      </button>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="mt-16 bg-indigo-900 text-white py-8">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    
+    <!-- Branding -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Konsultasi Karir</h4>
+      <p class="text-sm text-gray-300">Bantu siswa & mahasiswa temukan jurusan dan karier yang sesuai passion dan potensinya melalui pendekatan data & machine learning.</p>
+    </div>
+
+    <!-- Navigasi -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Navigasi</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="index.html" class="hover:text-gray-300">Beranda</a></li>
+        <li><a href="#form" class="hover:text-gray-300">Form Konsultasi</a></li>
+        <li><a href="#" class="hover:text-gray-300">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <!-- Sosial Media -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Ikuti Kami</h4>
+      <div class="flex space-x-4 mt-2">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="text-center text-sm text-gray-400 mt-8 border-t border-indigo-800 pt-4">
+    &copy; 2025 Konsultasi Karir. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>

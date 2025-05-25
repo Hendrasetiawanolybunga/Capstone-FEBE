@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekomendasi Karir & Jurusan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-indigo-950 text-white min-h-screen font-sans">
+
+  <!-- Navbar -->
+  <header class="p-4 flex justify-between items-center shadow">
+    <h1 class="text-2xl font-bold">Konsultasi Karir</h1>
+    <nav>
+      <a href="#" class="text-white hover:text-gray-300">Beranda</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center justify-center text-center py-16 px-4">
+    <h2 class="text-4xl font-bold mb-4">Temukan Jurusan & Karier Terbaik untuk Masa Depanmu</h2>
+    <p class="text-gray-300 mb-6 max-w-xl">Berdasarkan minat, nilai, dan profilmu, sistem kami akan merekomendasikan pilihan jurusan dan karier yang sesuai.</p>
+    <a href="#form" class="bg-white text-indigo-950 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
+      <i class="fas fa-arrow-right mr-2"></i> Mulai Konsultasi
+    </a>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form" class="bg-white text-black py-12 px-6 rounded-t-3xl">
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-2xl font-bold mb-6">Formulir Konsultasi</h3>
+      <form action="result.html" method="GET" class="space-y-4">
+        <div>
+          <label class="block font-medium">Nama</label>
+          <input type="text" name="nama" class="w-full border p-2 rounded" required>
+        </div>
+        <div>
+          <label class="block font-medium">Jenjang Pendidikan</label>
+          <select name="jenjang" class="w-full border p-2 rounded">
+            <option>SMA</option>
+            <option>SMK</option>
+            <option>Mahasiswa</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-medium">Minat</label>
+          <input type="text" name="minat" class="w-full border p-2 rounded" placeholder="Contoh: Teknologi, Bisnis" required>
+        </div>
+        <div>
+          <label class="block font-medium">Nilai / IPK</label>
+          <input type="text" name="nilai" class="w-full border p-2 rounded" placeholder="Contoh: 85 atau 3.5" required>
+        </div>
+        <button type="submit" class="bg-indigo-950 text-white px-4 py-2 rounded hover:bg-indigo-900">
+          <i class="fas fa-magic mr-2"></i> Dapatkan Rekomendasi
+        </button>
+      </form>
+    </div>
+  </section>
+<!-- Footer -->
+<footer class="mt-16 bg-indigo-900 text-white py-8">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+    
+    <!-- Branding -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Konsultasi Karir</h4>
+      <p class="text-sm text-gray-300">Bantu siswa & mahasiswa temukan jurusan dan karier yang sesuai passion dan potensinya melalui pendekatan data & machine learning.</p>
+    </div>
+
+    <!-- Navigasi -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Navigasi</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="index.html" class="hover:text-gray-300">Beranda</a></li>
+        <li><a href="#form" class="hover:text-gray-300">Form Konsultasi</a></li>
+        <li><a href="#" class="hover:text-gray-300">Tentang Kami</a></li>
+      </ul>
+    </div>
+
+    <!-- Sosial Media -->
+    <div>
+      <h4 class="text-xl font-bold mb-2">Ikuti Kami</h4>
+      <div class="flex space-x-4 mt-2">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="text-center text-sm text-gray-400 mt-8 border-t border-indigo-800 pt-4">
+    &copy; 2025 Konsultasi Karir. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
